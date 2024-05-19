@@ -1,6 +1,6 @@
 const {Client, Message} = require('discord.js');
-const Levels = require('../models/Levels');
-const calculateXp = require('../utils/calculateXp');
+const Levels = require('../../model/Levels');
+const calculateXp = require('../../utils/calculateLevelXp');
 function getRandXp(min,max) {
     min = Math.ceil(min);
     max = Math.floor(max);

@@ -15,5 +15,6 @@ module.exports = (directory,folderOnly=false) => {
                 fileNames.push(filePath);
                 }
     }
+    console.log(fileNames);
     return fileNames;
 };
