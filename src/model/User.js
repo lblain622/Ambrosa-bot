@@ -5,13 +5,23 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
-    balance:{
+    balance: {
         type: Number,
-        default: 0,
+        required: true,
+        default: 10000, // Initial balance
     },
     lastDaily:{
         type: Date,
         default: 0,
+    },
+    levelId: {
+        type: Schema.Types.ObjectId, // Reference to the Levels model
+        ref: 'Levels',
+    },
+    transactionHistory: {
+        type: [Schema.Types.ObjectId], // Array of Transaction references
+        ref: 'Transaction',
+        default: [],
     },
 });
 
