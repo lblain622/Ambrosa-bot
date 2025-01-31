@@ -1,5 +1,6 @@
 const { Client,Interaction } = require("discord.js");
-const User = require("../../models/User");
+const User = require('../../model/User');
+
 
 module.exports={
     name:'daily',
